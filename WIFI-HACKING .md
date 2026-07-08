@@ -146,7 +146,6 @@ Wireless security testing must only be performed on networks you own or for whic
 
 Wireless security assessments help organizations evaluate the strength of their Wi-Fi infrastructure, identify configuration weaknesses, and improve overall network security. Following a structured methodology and adhering to ethical guidelines ensures that testing remains responsible, effective, and legally compliant.
 
-
 # 📡 Wireless Security Assessment Workflow
 
 ## Overview
