@@ -146,115 +146,54 @@ Wireless security testing must only be performed on networks you own or for whic
 
 Wireless security assessments help organizations evaluate the strength of their Wi-Fi infrastructure, identify configuration weaknesses, and improve overall network security. Following a structured methodology and adhering to ethical guidelines ensures that testing remains responsible, effective, and legally compliant.
 
-# 📡 Wireless Security Assessment Workflow
+# 📡 Wireless Interface Information
 
-# 📡 Wireless Security Assessment Workflow
+## Display Wireless Interfaces
 
-## Overview
+```bash
+iwconfig
+```
 
-A wireless security assessment evaluates the security posture of a Wi-Fi network in an authorized environment. The objective is to identify weak configurations and recommend improvements without disrupting production systems.
-
----
-
-## Step 1: Prepare the Testing Environment
-
-### Objectives
-
-- Verify that the testing machine is ready.
-- Ensure the wireless adapter supports monitor mode.
-- Confirm authorization for the assessment.
-
-### Common Tools
-
-- Kali Linux
-- Aircrack-ng Suite
-- Wireshark
-- Kismet
-- Bettercap
+Displays available wireless network interfaces and their current mode (Managed/Monitor), ESSID, frequency, and signal information.
 
 ---
 
-## Step 2: Discover Wireless Networks
+# 📶 Network Information
 
-### Objectives
+## Display Network Interfaces
 
-Collect information about nearby wireless access points.
+```bash
+ip addr
+```
 
-Typical information gathered includes:
-
-- SSID
-- BSSID
-- Channel
-- Signal Strength
-- Encryption Type
-- Connected Clients
+Shows IP addresses and network interface configuration.
 
 ---
 
-## Step 3: Analyze Network Configuration
+# 🌐 Network Connectivity
 
-Review the wireless network's security configuration.
+## Test Internet Connectivity
 
-Areas to examine include:
+```bash
+ping google.com
+```
 
-- WPA2/WPA3 configuration
-- WPS status
-- Password policy
-- Firmware version
-- Guest network isolation
+Checks whether the system can reach the internet.
 
 ---
 
-## Step 4: Validate Security Controls
+# 📋 System Information
 
-Within the approved scope of the engagement, verify whether identified security weaknesses can be confirmed safely.
+## Display Wireless Device Details
 
-Examples:
+```bash
+lspci
+```
 
-- Authentication review
-- Configuration validation
-- Encryption verification
-- Access control assessment
+Lists PCI devices, including internal wireless adapters.
 
----
+```bash
+lsusb
+```
 
-## Step 5: Document Findings
-
-Prepare a professional report including:
-
-- Executive Summary
-- Scope
-- Methodology
-- Findings
-- Risk Ratings
-- Evidence
-- Recommendations
-
----
-
-# 🛠️ Common Wireless Security Tools
-
-| Tool | Purpose |
-|------|---------|
-| Aircrack-ng | Wireless security auditing |
-| Wireshark | Packet analysis |
-| Kismet | Wireless monitoring |
-| Bettercap | Network analysis |
-| Hashcat | Password auditing in authorized environments |
-
----
-
-# 🛡️ Best Practices
-
-- Use WPA3 whenever possible.
-- Disable WPS if it is not required.
-- Use long, unique Wi-Fi passwords.
-- Keep router firmware updated.
-- Monitor connected devices regularly.
-- Conduct periodic security assessments.
-
----
-
-## ⚖️ Legal Notice
-
-Perform wireless security testing only on networks that you own or for which you have explicit written authorization.
+Lists connected USB devices, including external Wi-Fi adapters.
