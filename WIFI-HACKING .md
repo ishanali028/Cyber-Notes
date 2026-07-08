@@ -148,6 +148,8 @@ Wireless security assessments help organizations evaluate the strength of their 
 
 # 📡 Wireless Security Assessment Workflow
 
+# 📡 Wireless Security Assessment Workflow
+
 ## Overview
 
 A wireless security assessment evaluates the security posture of a Wi-Fi network in an authorized environment. The objective is to identify weak configurations and recommend improvements without disrupting production systems.
